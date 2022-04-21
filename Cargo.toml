@@ -15,7 +15,7 @@ keywords = ["yaml", "serde"]
 ryu = "1.0"
 indexmap = "1.5"
 serde = "1.0.69"
-yaml-rust = "0.4.5"
+yaml-rust = { git = "https://github.com/alevinval/yaml-rust.git", branch = "feature-comment-support" }
 
 [dev-dependencies]
 anyhow = "1.0"

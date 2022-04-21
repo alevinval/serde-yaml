@@ -184,9 +184,9 @@ fn test_number_as_string() {
     struct Num {
         value: String,
     }
+    //  Cannot be represented as u128
     let yaml = indoc! {"
         ---
-        # Cannot be represented as u128
         value: 340282366920938463463374607431768211457
     "};
     let expected = Num {
