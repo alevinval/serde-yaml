@@ -68,9 +68,9 @@ impl Location {
     fn from_marker(marker: &Marker) -> Self {
         Location {
             // `col` returned from the `yaml` crate is 0-indexed but all error messages add + 1 to this value
-            column: marker.col() + 1,
-            index: marker.index(),
-            line: marker.line(),
+            column: marker.col + 1,
+            index: marker.index,
+            line: marker.line,
         }
     }
 }
